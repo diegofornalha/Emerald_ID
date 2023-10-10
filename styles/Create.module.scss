@@ -1,0 +1,43 @@
+.create {
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.owned {
+  border: 2px solid #37dabc;
+  border-radius: 10px;
+  padding: 30px;
+
+  .ownedButtons {
+    position: relative;
+
+    a {
+      margin-right: 10px;
+      text-align: center;
+    }
+    
+    @media all and (max-width: 700px) {
+      a {
+        margin: 0px;
+        min-width: 0px;
+        margin-bottom: 10px;
+      }
+
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+.differing {
+  border: 2px solid #fd5c63;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.logged {
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 30px;
+}

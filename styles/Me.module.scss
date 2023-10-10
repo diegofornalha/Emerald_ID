@@ -1,0 +1,32 @@
+.me {
+  position: relative;
+  top: 200px;
+  width: 100vw;
+  min-height: 100vh;
+
+  h1 {
+    position: relative;
+    text-align: center;
+  }
+
+  .logout {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    min-width: 220px;
+    padding: 16px 32px;
+    text-transform: uppercase;
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
+    bottom: 30px;
+    color: white;
+    font-weight: bold;
+    background-color: #fd5c63;
+  }
+
+  .list {
+    position: relative;
+  }
+}
