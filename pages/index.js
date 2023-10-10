@@ -7,23 +7,23 @@ import { useFlow } from '../context/FlowContext';
 import Link from 'next/link';
 
 function Home(props) {
-  const { unauthenticate } = useFlow();
+  const { desautenticar } = useFlow();
 
   useEffect(() => {
-    unauthenticate();
+    desautenticar();
   }, []);
 
   return (
     <div className={styles.app}>
       <main>
         <h1>Emerald <span style={{ color: '#fff' }}>ID</span></h1>
-        <p>Link your <span style={{ color: '#5865F2' }}>Discord</span> to all of your <span style={{ color: '#16ff99' }}>Flow</span> wallets so you only ever have to verify your wallet once.</p>
+        <p>Vincule o seu <span style={{ color: '#5865F2' }}>Discord</span> a todas as suas carteiras <span style={{ color: '#16ff99' }}>Flow</span>, para que você só precise verificar a sua carteira uma vez.</p>
         <div className={styles.margin10}>
           <Link href="/me">
-            <a style={{ color: '#37dabc', borderColor: '#37dabc' }}>View my IDs</a>
+            <a style={{ color: '#37dabc', borderColor: '#37dabc' }}>Ver meus IDs</a>
           </Link>
           <Link href="/me">
-            <a style={{ color: '#fff', borderColor: '#fff' }}>Create an ID</a>
+            <a style={{ color: '#fff', borderColor: '#fff' }}>Criar um ID</a>
           </Link>
         </div>
       </main>
